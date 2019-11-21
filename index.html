@@ -64,8 +64,19 @@ html {
     background: linear-gradient( to left top, blue, red);
   font-family: 'Alata', sans-serif;
 }
-http://jsfiddle.net/F7vf9/
-http://jsfiddle.net/F7vf9/
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: green;
+}
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
@@ -75,7 +86,7 @@ http://jsfiddle.net/F7vf9/
 <div style="display:none;" id="myDiv" class="animate-bottom">
   <h2>Welcome to Bou Monster</h2>
   <p>This website is currently under construction</p>
-  <A HREF="https://go.retief.club/gbrr">Entertain yourself with this meanwhile</A>
+<input class="button" type="button" onclick="location.href='http://google.com';" value="Go to Google" />
 </div>
 
 <script>
