@@ -90,17 +90,21 @@ p {
   font-family: 'Alata', sans-serif;
     }
 img {
-  animation: example 5s linear 4s infinite normal;
+  animation: example 5s linear 4s infinite alternate;
     }
 @keyframes example {
   0% {filter: invert(0%);}
   5% {filter: invert(0%);}
   6% {filter: invert(100%);}
-  7% {filter: invert(0%);}
+  10% {filter: invert(0%);}
   22% {filter: invert(0%);}
   23% {filter: invert(100%);}
   31% {filter: invert(100%);}
   32% {filter: invert(0%);}
+  35% {filter: invert(0%);}
+  36% {filter: invert(100%);}
+  37% {filter: invert(100%);}
+  38% {filter: invert(0%);}
   100% {filter: invert(0%);}
 }
 </style>
