@@ -98,10 +98,11 @@ p {
     }
 img {
   animation: example 3.5s linear 2s infinite alternate;
+  animation: boggo 5 ease-in-out 0s infinite alternate;
   height:100%;
     }
 @keyframes example {
-  0% {filter: invert(0%);filter: brightness(100%);}
+  0% {filter: invert(0%);}
   5% {filter: invert(0%);}
   6% {filter: invert(100%);}
   9% {filter: invert(100%);}
@@ -114,9 +115,13 @@ img {
   36% {filter: invert(100%);}
   37% {filter: invert(100%);}
   38% {filter: invert(0%);}
-  50% {filter: brightness(75%);}
-  100% {filter: invert(0%);filter: brightness(75%);}
+  100% {filter: invert(0%);}
 }
+ @keyframes boggo {
+   0% {filter: brightness(100%);}
+   50% {filter: brightness(50%);}
+   100% {filter: brightness(100%);}
+    }
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;height:100%;padding:0;">
